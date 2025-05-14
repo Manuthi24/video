@@ -62,7 +62,7 @@
 <%@ include file="header.jsp" %>
 
 	<%
-			String id = request.getParameter("id");
+		String id = request.getParameter("id");
 	        String title = request.getParameter("title");
 	        String description = request.getParameter("description");
 	        String category = request.getParameter("category");
