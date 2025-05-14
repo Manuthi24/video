@@ -73,17 +73,7 @@
 
     <h2>Update Video Details</h2>
     
-    
-    <%
-    String error = (String) request.getAttribute("errorMessage");
-    if (error != null) {
-    %>
-    <div style="color:red; padding:10px; background:#ffe6e6; margin-bottom:10px;">
-        <%= error %>
-    </div>
-    <%
-        }
-    %>
+
     
     <form action="update" method="post"> 
         <label for="id">Video ID</label>
