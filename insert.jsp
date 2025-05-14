@@ -98,19 +98,7 @@
     <div class="container">
         <h2>Upload Video</h2>
         
-        <%
-        String error = (String) request.getAttribute("errorMessage");
-        if (error != null) {
-        %>
-        <div style="color: red; padding: 10px; border: 1px solid red; margin-bottom: 10px; background-color: #ffe6e6;">
-            <%= error %>
-        </div>
-        <%
-           }
-        %>
-        
-        
-        
+    
         <form action="upload" method="post">
     <label for="title">Title</label>
     <input type="text" name="title" id="title" required value="<%= request.getParameter("title") != null ? request.getParameter("title") : "" %>">
